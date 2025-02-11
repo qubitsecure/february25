@@ -1,11 +1,22 @@
+import './index.css';
+
 const Home = () => {
     return (
-        <div className="Home"> 
-        <div className="title">
-            <h2>Home Page</h2>
+        <div className='main'>
+        <div className="content">
+            <div className='title'> Maddy Swan </div>
+            <p className='subs'> FINE ART </p>
+            </div> 
+            <div className="main container">
+              <div className='content'></div>
+              <div className="main container1"></div>
+              <div className='mainpicture'>
+              {/* <img src={jenniferg} alt='' /> */}
+              </div> 
+
+              </div>   
         </div>
-            <p>Welcome to the home page</p>
-        </div>
+
       );
 }
  
