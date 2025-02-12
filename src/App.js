@@ -1,22 +1,16 @@
 import React from 'react';
-import Sidebar from './Sidebar';
+import Sidebar from './sidebar';
 import Home from './Home';
 
 
 function App() {
-
   return (
-
     <div className="App">
-    <Home />
-    <Sidebar />
-
-    <div className="content">
-    </div>  
-   
-       </div>
-
-
+      <div className="main">
+        <Home />
+        <Sidebar />
+      </div>
+    </div>
   );
 }
 
