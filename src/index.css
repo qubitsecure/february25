@@ -1,14 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Dynalight');
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
-/* .sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 196px;
-  padding-left: 20px;
-  background-color: #f0f0f0;
-  overflow-y: auto;
-} */
+:root {
+  --primary-color:  #C8033C;
+  --primary-dark: #7e640c41;
+  --background-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+span {color: var(--background-color);}
 
 
 body {
@@ -24,11 +32,12 @@ code {
     monospace;
 }
 
-.title {
-  align-items: top;
-  font-size: 10pt;
+.masthead {
+  font-family: 'Dynalight';
+  /* align-items: top; */
+  font-size: 30pt;
   font-weight: 400;
-  color: #333;
+  color: #92006e;
 }
 
 
@@ -56,7 +65,7 @@ code {
   color: rgb(254, 254, 255);
 }
 
-.main {
+main {
   min-height: 100vh;
   padding: 4rem 0;
   flex: 1;
@@ -64,7 +73,7 @@ code {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(251, 251, 252);
+  background-color: #fbfbfc;
 }
 
 .main .container {

@@ -2,6 +2,10 @@
 	--sidebar-width: 3.7em;
   }
 
+  .root-layout {
+	display: flex;
+  }
+
 .sidebar {
 	
 	background-color: #4d4d4d;
@@ -51,6 +55,12 @@
 	align-items: center;
 	display: flex;
 	justify-content: center;
+
+	main {
+		margin-left: 150px; /* Adjust this value based on the width of the sidebar */
+		padding: 20px;
+		flex-grow: 1;
+	  }
 }
 
 @media (max-width: 432px) {
