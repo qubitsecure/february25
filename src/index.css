@@ -34,7 +34,7 @@ code {
 
 .masthead {
   font-family: 'Dynalight';
-  /* align-items: top; */
+  align-items: top;
   font-size: 30pt;
   font-weight: 400;
   color: #92006e;
@@ -76,9 +76,8 @@ main {
   background-color: #fbfbfc;
 }
 
-.main .container {
-  max-width: 1240px;
-  margin: auto;
+.main-container {
+  padding: 0px;
 }
 
 
@@ -88,20 +87,27 @@ main {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.main .content {
-  height: 75vh;
+.maincontent {
+  height: 55vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 1rem;
-  margin-left: 6rem;
+  margin-left: 16rem;
 }
 
-.main .mainpicture {
-  width: 100%;
+.mainpicture_img {
+  max-width: 100%;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 16rem;
+  margin-right: 30rem;
+  border-width: 0px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); 
  
 }
+
 .footer {
   display: flex;
   flex: 1;
