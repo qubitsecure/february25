@@ -9,6 +9,7 @@ export default function RootLayout({ children }) {
 
             <aside className="sidebar">
                 <nav className="sidebar__nav">
+                    <ul>
                         <li>
                             <NavLink to="/Home" className="sidebar__nav__link">
                                 <i className="material-icons">palette</i>
@@ -57,6 +58,7 @@ export default function RootLayout({ children }) {
                                 <span className="sidebar__nav__text">Information</span>
                                 </NavLink>
                                 </li>
+                                </ul>
                    </nav>
                </aside>
             <main>

@@ -7,7 +7,7 @@ import Portraits from './layouts/Portraits';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
-      {/* <Route path="/" element={<Home />} /> */}
+      <Route index element={<Home />} /> {/* This sets Home as the default route */}
       <Route path="/Home" element={<Home />} />
       <Route path="/Portraits" element={<Portraits />} />
     </Route>

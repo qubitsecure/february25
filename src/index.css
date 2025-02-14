@@ -19,10 +19,10 @@
 span {color: var(--background-color);}
 
 
-body {
+.bodytext {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Oxygen', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 15pt;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -35,9 +35,11 @@ code {
 .masthead {
   font-family: 'Dynalight';
   align-items: top;
-  font-size: 30pt;
+  margin-top: 40px;
+  margin-left: 110px;
+  font-size: 90pt;
   font-weight: 400;
-  color: #92006e;
+  color: #b8264b;
 }
 
 
@@ -59,13 +61,12 @@ code {
 .content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
   text-align: center;
   color: rgb(254, 254, 255);
 }
 
-main {
+.main {
   min-height: 100vh;
   padding: 4rem 0;
   flex: 1;
@@ -73,14 +74,16 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #fbfbfc;
+  background-color: #fff;
 }
 
 .main-container {
-  padding: 0px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Creates a 2-column grid */
+  gap: 10px; /* Adjust the gap between columns as needed */
+  padding: 30px, 20px, 10px, 20px;
+  background-color: #fffcfc;
 }
-
-
 
 .main .container1 {
   display: grid;
@@ -88,24 +91,35 @@ main {
 }
 
 .maincontent {
+  grid-column: span 2; /* Span across 2 columns */
   height: 55vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   padding: 1rem;
-  margin-left: 16rem;
+  margin-left: 10rem;
+  margin-right: 16rem;
+  background-color: #fff;
+}
+
+.maincontent_text {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 13pt;
+  color: #333331;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  
 }
 
 .mainpicture_img {
+  grid-column: 2; 
+  display: inline-block; /* Ensure the container shrinks to fit the image */
   max-width: 100%;
   height: auto;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 16rem;
-  margin-right: 30rem;
+  margin: 0 auto;
+  margin-right: 180px;
   border-width: 0px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); 
- 
 }
 
 .footer {
@@ -116,9 +130,12 @@ main {
   justify-content: center;
   align-items: center;
 }
- .subtext {
-  font-size: 7pt;
-  color: #082191;
+ .subs {
+  font-size: 17pt;
+  margin-top: 30px;
+  margin-left: 110px;
+  color: #7a7664;
+  letter-spacing: 1.5em;
 
 }
 .footer a {
