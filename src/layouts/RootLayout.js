@@ -1,6 +1,6 @@
 import { NavLink, Outlet } from 'react-router-dom'
-import Home from '../Home'
-// import sidebar from './Sidebar';
+// import Home from '../Home'
+import '../Sidebar.css'; 
 
 export default function RootLayout({ children }) {
     return (
@@ -9,7 +9,7 @@ export default function RootLayout({ children }) {
 
             <aside className="sidebar">
                 <nav className="sidebar__nav">
-                    <ul>
+                    
                         <li>
                             <NavLink to="/Home" className="sidebar__nav__link">
                                 <i className="material-icons">palette</i>
@@ -58,12 +58,20 @@ export default function RootLayout({ children }) {
                                 <span className="sidebar__nav__text">Information</span>
                                 </NavLink>
                                 </li>
-                                </ul>
+                               
                    </nav>
                </aside>
-            <main>
+
+            <main>          
                 <Outlet />
             </main>
+
+            {/* <div>
+           <footer>
+            <Outlet />  
+            </footer>  
+            </div> */}
+
         </div>
         </div>
     );

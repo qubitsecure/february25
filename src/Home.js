@@ -23,9 +23,7 @@ const Home = () => {
             </div>
            
       </div>
-      <div className='footer'>
-        <p> © 2025 Maddy Swan </p>
-      </div>
+   
     </div>
     
 

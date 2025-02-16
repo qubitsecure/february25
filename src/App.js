@@ -1,7 +1,9 @@
 import { createBrowserRouter, Route, createRoutesFromElements, RouterProvider } from 'react-router-dom';
-import Home from './Home';
 import RootLayout from './layouts/RootLayout';
-import Portraits from './layouts/Portraits'; 
+import Home from './Home';
+import Portraits from './layouts/Portraits';
+import Footer from './layouts/Footer';
+
 
 
 const router = createBrowserRouter(
@@ -10,11 +12,10 @@ const router = createBrowserRouter(
       <Route index element={<Home />} /> {/* This sets Home as the default route */}
       <Route path="/Home" element={<Home />} />
       <Route path="/Portraits" element={<Portraits />} />
-    </Route>
+      <Route path="/Footer" element={<Footer />} />
+      </Route>
   )
 );
-
-
 
 
 function App() {

@@ -36,13 +36,14 @@
 	padding-left: 10px;
 	text-decoration: none;
 	transition: color 0.1s ease, background-color 0.2s ease;
+
 	
 }
 
 .sidebar .sidebar__nav .sidebar__nav__link:hover,
 .sidebar .sidebar__nav .sidebar__nav__link:focus,
 .sidebar .sidebar__nav .sidebar__nav__link:active {
-  background-color: rgb(252, 255, 166);
+  background-color: rgb(252, 252, 212);
   color: #333; /* Change text color to dark */
 }
 

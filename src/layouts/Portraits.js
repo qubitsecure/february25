@@ -3,7 +3,7 @@ import React from 'react';
 
 const Portraits = () => {
     return (
-        <div className ='masthead'>
+        <div className ='headline2'>
             <p>Portraits Layout</p>
             {/* Add your portrait components here */}
         </div>
