@@ -108,6 +108,7 @@
 
 	.sidebar .sidebar__nav li:last-child {
 		margin-top: auto;
+		padding-bottom: 2rem;
 	}
 
 	.sidebar .sidebar__nav .sidebar__nav__link {

@@ -75,11 +75,11 @@ code {
   justify-content: left;
   text-align: center;
   color: rgb(254, 254, 255);
+  
 }
 
 .main {
   max-height: 100vh;
-  padding: 4rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -94,7 +94,7 @@ code {
   gap: 10px; /* Adjust the gap between columns as needed */
   background-color: rgb(252, 251, 251);
   padding-top: 4rem;
-  padding-bottom: 4rem;
+
 }
 
 .main .container1 {
@@ -104,21 +104,24 @@ code {
 
 .maincontent {
   grid-column: span 2; /* Span across 2 columns */
-  height: 55vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   margin-left: 10rem;
   margin-right: 16rem;
   background-color: #ffffff;
+  padding-top: 2rem;
 }
 
 .maincontent_text {
   font-family: 'Oxygen', sans-serif;
   font-size: 13pt;
   color: #333331;
-  margin-top: 20px;
+  line-height: 1.8;
+  margin-top: 30px;
   margin-left: 20px;
-  margin-right: 20px;
+  margin-right: 10px;
+
   
 }
 
@@ -126,6 +129,7 @@ code {
   grid-column: 2; 
   display: inline-block; /* Ensure the container shrinks to fit the image */
   max-width: 100%;
+  margin-right: 10px;
   height: auto;
   margin: 0 auto;
   margin-right: 180px;
@@ -134,7 +138,6 @@ code {
 }
 
 .footerstyle {
-  z-index: 4;
   font-family: 'Oxygen', sans-serif;
   color: #ffffff;
   background-color: #0a0b11c4;
@@ -150,6 +153,7 @@ code {
   width: 100%;
   text-align: center;
   padding: 1rem;
+ 
 }
 
 .footer_a:hover,
