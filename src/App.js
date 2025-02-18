@@ -2,7 +2,7 @@ import { createBrowserRouter, Route, createRoutesFromElements, RouterProvider } 
 import RootLayout from './layouts/RootLayout';
 import Home from './Home';
 import Portraits from './layouts/Portraits';
-import Footer from './layouts/Footer';
+import Footer from './Footer';
 
 
 
@@ -11,8 +11,9 @@ const router = createBrowserRouter(
     <Route path="/" element={<RootLayout />}>
       <Route index element={<Home />} /> {/* This sets Home as the default route */}
       <Route path="/Home" element={<Home />} />
-      <Route path="/Portraits" element={<Portraits />} />
       <Route path="/Footer" element={<Footer />} />
+      <Route path="/Portraits" element={<Portraits />} />
+
       </Route>
   )
 );

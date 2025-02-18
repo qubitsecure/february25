@@ -31,7 +31,7 @@
 
 .sidebar .sidebar__nav .sidebar__nav__link {
 	align-items: center;
-	color: #fffede;
+	color: #ffffff;
 	display: flex;
 	padding-left: 10px;
 	text-decoration: none;
@@ -51,7 +51,7 @@
 	display: none;
 	font-family: 'Oxygen', sans-serif;
 	font-size: 0.8rem;
-	color: #fefff8;
+	color: #fc4390;
 	margin-left: 8px;
 	margin-right: auto;
 	white-space: nowrap;

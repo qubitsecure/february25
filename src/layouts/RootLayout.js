@@ -1,6 +1,7 @@
 import { NavLink, Outlet } from 'react-router-dom'
 // import Home from '../Home'
 import '../Sidebar.css'; 
+import Footer from '../Footer';
 
 export default function RootLayout({ children }) {
     return (
@@ -62,17 +63,13 @@ export default function RootLayout({ children }) {
                    </nav>
                </aside>
 
-            <main>          
-                <Outlet />
-            </main>
-
-            {/* <div>
-           <footer>
-            <Outlet />  
-            </footer>  
-            </div> */}
-
+            <main>       
+                 <Outlet />  
+            </main>          
         </div>
-        </div>
+            <Footer />  
+          </div> 
+        
+    
     );
 }
