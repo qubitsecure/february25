@@ -137,6 +137,15 @@ code {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); 
 }
 
+.secondary_img {
+  float: left;
+  width: 350px;
+  height: auto;
+  margin-right: 40px auto;
+  border-width: 0px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); 
+}
+
 .footerstyle {
   font-family: 'Oxygen', sans-serif;
   color: #ffffff;
