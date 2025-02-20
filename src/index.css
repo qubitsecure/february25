@@ -45,9 +45,9 @@ code {
 
 .headline2{
   font-family: 'Dynalight';
-  align-items: top;
-  margin-top: 40px;
-  margin-left: 110px;
+  text-align: right;
+  /* margin-top: 20px; */
+  margin-right: 160px;
   font-size: 60pt;
   font-weight: 400;
   color: #b8264b;
@@ -93,7 +93,7 @@ code {
   grid-template-columns: repeat(2, 1fr); /* Creates a 2-column grid */
   gap: 10px; /* Adjust the gap between columns as needed */
   background-color: rgb(252, 251, 251);
-  padding-top: 4rem;
+  padding-top: 2rem;
 
 }
 
@@ -105,6 +105,18 @@ code {
 .maincontent {
   display: grid;
   grid-column: span 2; /* Span across 2 columns */
+  flex-direction: column;
+  column-gap: 50px;
+  margin-left: 12rem;
+  margin-right: 10rem;
+  background-color: #ffffff;
+  padding-top: 1rem; padding-bottom: 4rem; 
+  max-width: 100%; 
+}
+
+.maincontent2 {
+  display: grid;
+  grid-column: span 1; /* Span across 2 columns */
   flex-direction: column;
   margin-left: 12rem;
   margin-right: 10rem;
@@ -121,8 +133,17 @@ code {
   margin-top: 30px;
   margin-left: 20px;
   margin-right: 20px;
+  margin-bottom: 20px;
+}
 
-  
+.maincontent2_text {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 13pt;
+  color: #333331;
+  line-height: 1.8;
+  margin-top: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .mainpicture_img {
@@ -136,21 +157,19 @@ code {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); 
 }
 
-.container1 {
+.container {
   display: flex;
   flex-direction: column;
+  column-span: 50%;
   justify-content: left;
   text-align: start;
   color: rgb(254, 254, 255);
-  
 }
 
-
 .secondary_img {
-  float: left; 
-  margin-top: 20px; 
-  margin-right: 20px;
-  margin-bottom: 20px; 
+  grid-column: 1; 
+  display: inline-block; 
+  margin: 0 auto; 
   max-width: 100%; /* Adjust the width as needed */
   height: auto;
   border-width: 0px;
@@ -158,8 +177,9 @@ code {
 }
 
 .tertiary_img {
-  float: right; 
-  margin: 20px; /* Add some margin around the image */
+  grid-column: 2; 
+  display: inline-block; 
+  padding-left: 20px; 
   max-width: 100%; /* Adjust the width as needed */
   height: auto;
   border-width: 0px;
