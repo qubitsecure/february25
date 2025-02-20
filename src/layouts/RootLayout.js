@@ -24,37 +24,37 @@ export default function RootLayout({ children }) {
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="#" className="sidebar__nav__link">
+                            <NavLink to="Commissions" className="sidebar__nav__link">
                                 <i className="material-icons">query_builder</i>
                                 <span className="sidebar__nav__text">Previous Commissions</span>
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="#" className="sidebar__nav__link">
+                            <NavLink to="Gallery" className="sidebar__nav__link">
                                 <i className="material-icons">settings_system_daydream</i>
                                 <span className="sidebar__nav__text">Gallery</span>
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="#" className="sidebar__nav__link">
+                            <NavLink to="Exhibitions" className="sidebar__nav__link">
                                 <i className="material-icons">camera</i>
                                 <span className="sidebar__nav__text">Exhibitions</span>
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="#" className="sidebar__nav__link">
+                            <NavLink to="AboutMe" className="sidebar__nav__link">
                                 <i className="material-icons">person</i>
                                 <span className="sidebar__nav__text">About Me</span>
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="#" className="sidebar__nav__link">
+                            <NavLink to="Contact" className="sidebar__nav__link">
                                 <i className="material-icons">chat_bubble_outline</i>
                                 <span className="sidebar__nav__text">Contact</span>
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="#" className="sidebar__nav__link">
+                            <NavLink to="Information" className="sidebar__nav__link">
                                 <i className="material-icons">settings</i>
                                 <span className="sidebar__nav__text">Information</span>
                                 </NavLink>
