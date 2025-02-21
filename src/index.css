@@ -125,6 +125,17 @@ code {
   max-width: 100%; 
 }
 
+.maincontent3 {
+  display: grid;
+  grid-column: span 1; /* Span across 2 columns */
+  flex-direction: column;
+  margin: 12rem;
+  padding: 3rem;
+  background-color: #ffffff;
+  max-width: 100%; 
+
+}
+
 .maincontent_text {
   font-family: 'Oxygen', sans-serif;
   font-size: 13pt;
@@ -301,6 +312,50 @@ code {
   height: 1em;
   margin-left: 0.5rem;
 }
+
+
+.gallery-frame {
+  width: 680px; 
+  border: 40px solid rgb(207, 195, 250); 
+}
+
+.carousel-container {
+  width: 600px; /* Set the width of the carousel container */
+  margin: 0 auto; /* Center the carousel container */
+  position: relative;
+}
+
+.carousel-container .carousel .slide img {
+  border: 40px solid grey; /* Add a 20px grey border */
+  object-fit: contain; /* Scale the images to fit */
+  width: 100%; /* Ensure the images take up the full width of the container */
+  height: auto; /* Maintain the aspect ratio of the images */
+}
+
+.carousel .control-arrow {
+  background: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background to the arrows */
+  border-radius: 50%; /* Make the arrows circular */
+  width: 30px; /* Set the width of the arrows */
+  height: 30px; /* Set the height of the arrows */
+  top: 50%; /* Center the arrows vertically */
+  transform: translateY(-50%); /* Center the arrows vertically */
+  z-index: 4; 
+  position: absolute; 
+}
+
+.carousel .control-arrow:hover {
+  background: rgba(0, 0, 0, 0.8); /* Darken the background on hover */
+}
+
+.carousel .control-prev.control-arrow {
+  left: -40px; /* Position the left arrow */
+}
+
+.carousel .control-next.control-arrow {
+  right: -40px; /* Position the right arrow */
+}
+
+
 
 
 @media screen and (max-width: 767px) {
