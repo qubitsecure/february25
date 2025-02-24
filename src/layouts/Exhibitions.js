@@ -5,14 +5,13 @@ import ms_33 from '../assets/ms_33.jpg';
 
 const Exhibitions = () => {
     return (
-
       <div className='main-container'>
        <div className="maincontent2">
        </div>
       <div className ='headline2'>
-            <p>Exhibitions</p>
-            </div>
-       <div className="maincontent">    
+      <p>Exhibitions</p>
+      </div>
+      <div className="maincontent">    
           <div className='maincontent_text'>        
           <p>Primarily I am a portrait artist who specialises in adults, teens, children and occasionally pets. I also produce landscapes, figure studies and botanical sketches. The media I use is watercolour, oil, acrylic, pastel, charcoal, colour pencil and graphite. In essence I like experimenting with any medium and material that inspires me.
 </p>
@@ -40,6 +39,6 @@ const Exhibitions = () => {
       </div>
 
       );
-}
+};
 
 export default Exhibitions;
