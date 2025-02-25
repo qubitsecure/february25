@@ -1,8 +1,13 @@
+import React, { useEffect } from 'react';
 import './index.css';
 import jenniferg from './assets/jenniferg.jpg';
-import ms_83a from './assets/ms_83a.jpg';
+
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+}, []);
+
     return (
      
       <div className='container'>        
@@ -24,10 +29,6 @@ const Home = () => {
             <img src={jenniferg} alt='Jennifer G' />
              </div> 
              </div>
-      {/* <div className='item-5'>
-<div className='secondary_img'>
-            <img src={ms_83a} alt='ms_83a' />
-       </div>   */}
     </div>
   
   

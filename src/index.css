@@ -25,7 +25,13 @@ span {color: var(--background-color);}
   color: #333331;
   line-height: 1.8;
   max-width: 100%;
+}
 
+.main-text-2 {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 13pt;
+  color: #333331;
+  line-height: 1.8;
 }
 
   .masthead {
@@ -46,6 +52,14 @@ span {color: var(--background-color);}
     letter-spacing: 1.5em;
    }
 
+   .headline2 {
+    font-family: 'Dynalight';
+    font-size: 80pt;
+    margin-top: 20px;
+    font-weight: 400;
+    color: #b8264b;
+  }
+  
 .container {
   display: grid;
   padding-left: 10em;
@@ -86,6 +100,55 @@ span {color: var(--background-color);}
   grid-area: footer;
  }
 
+ .container_2 {
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: auto;
+  padding-left: 10em;
+  padding-right: 8em;
+  column-gap: 2em;
+  row-gap: 4em;
+  align-items: start;
+  grid-template-areas: 
+  'headline2 headline2'
+  'main aside' 
+  'footer footer';
+} 
+
+.item-11 {
+  grid-area: headline2;
+  text-align: center;
+}
+
+ .item-12 {
+  grid-area: main;
+ }
+
+ .item-13 {
+  grid-area: aside;
+ }
+
+ .caption {
+  font-family: 'Oxygen', sans-serif;
+  color: #332f3f;
+  text-align: left;
+  font-size: 10pt;
+  margin-top: 0.7rem;
+  margin-left: 1rem;
+  margin-bottom: 3rem;
+}
+.caption-r {
+  font-family: 'Oxygen', sans-serif;
+  color: #332f3f;
+  text-align: right;
+  font-size: 10pt;
+  margin-top: 0.7rem;
+  margin-right: 1rem;
+  margin-bottom: 3rem;
+}
+  
+
+
       .mainpicture_img {
         display: inline-block; /* Ensure the container shrinks to fit the image */
         max-width: 100%;
@@ -99,12 +162,17 @@ span {color: var(--background-color);}
       .secondary_img {
         display: inline-block; 
         margin-bottom: 10px; 
-        max-width: 100%; /* Adjust the width as needed */
+        margin-top: 10px;
+        width: 50%; /* Adjust the width as needed */
         height: auto;
         border-width: 0px;
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); /* Maintain the drop shadow */
       }
       
+      .secondary_img img {
+        width: 100%; /* Set the width of the image to 100% of its container */
+        height: auto; /* Maintain the aspect ratio */
+      }
 
       .footerstyle {
         font-family: 'Oxygen', sans-serif;
@@ -124,6 +192,48 @@ span {color: var(--background-color);}
         padding: 1rem;
        
       }
+
+      .carousel-container {
+        width: 550px; /* Set the width of the carousel container */
+        height: auto; 
+        margin-left: 3rem; /* Center the carousel container */
+        position: relative; /* Ensure the container is positioned relative to its parent */
+      }
+      
+      .carousel-container .carousel .slide img {
+        object-fit: contain; /* Scale the images to fit */
+        width: 100%; /* Ensure the images take up the full width of the container */
+        height: auto; /* Maintain the aspect ratio of the images */
+      }
+      
+      .carousel .control-arrow {
+        background: rgba(80, 50, 10, 5.5); /* Add a semi-transparent background to the arrows */
+        width: 20px; /* Set the width of the arrows */
+        top: 40%; /* Center the arrows vertically */
+        transform: translateY(0%); /* Center the arrows vertically */
+        z-index: 2; /* Ensure the arrows are above the images */
+        position: relative;
+      }
+      
+      .carousel .control-arrow:hover {
+        background: rgba(0, 90, 70, 6.8); /* Darken the background on hover */
+        /* z-index: 2; */
+      }
+      
+      .carousel .control-prev.control-arrow {
+        left: 10px; /* Position the left arrow inside the container */
+        z-index: 2;
+      }
+      
+      .carousel .control-next.control-arrow {
+        right: 10px; /* Position the right arrow inside the container */
+        z-index: 2;
+      }
+      
+      
+
+
+
 
 
 
