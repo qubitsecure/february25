@@ -4,6 +4,9 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import ms_26 from '../assets/ms_26.jpg';
 import ms_29 from '../assets/ms_29.jpg';
 import ms_32 from '../assets/ms_32.jpg';
+import ms_101 from '../assets/ms_101.jpg';
+import ms_34 from '../assets/ms_34.jpg';
+
 
 
 const Gallery = () => {
@@ -47,8 +50,14 @@ const Gallery = () => {
                     <img src={ms_29} alt="ms_29" />
                     </div>
                     <div>
+                    <img src={ms_101} alt="ms_101" />
+                    </div>
+                    <div>
                     <img src={ms_32} alt="ms_32" />
                 </div>
+                <div>
+                    <img src={ms_34} alt="ms_34" />
+                    </div>
             </Carousel>
         </div>
         </div>

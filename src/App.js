@@ -11,7 +11,7 @@ import Contact from './layouts/Contact';
 import Information from './layouts/Information.js';
 import Footer from './Footer';
 import './index.css';
-
+import P5Sketch from './components/P5Sketch.js';
 
 
 const router = createBrowserRouter(

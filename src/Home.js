@@ -28,9 +28,12 @@ const Home = () => {
 <div className='mainpicture_img'>
             <img src={jenniferg} alt='Jennifer G' />
              </div> 
+         
+              <div className='caption-r'>Jennifer Garner</div>
+          
              </div>
-    </div>
-  
+    
+             </div>
   
       );
 }

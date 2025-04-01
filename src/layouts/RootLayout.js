@@ -1,5 +1,4 @@
 import { NavLink, Outlet } from 'react-router-dom'
-// import Home from '../Home'
 import '../Sidebar.css'; 
 import Footer from '../Footer';
 
@@ -26,7 +25,7 @@ export default function RootLayout({ children }) {
                         <li>
                             <NavLink to="Commissions" className="sidebar__nav__link">
                                 <i className="material-icons">query_builder</i>
-                                <span className="sidebar__nav__text">Previous Commissions</span>
+                                <span className="sidebar__nav__text">Commissions</span>
                             </NavLink>
                         </li>
                         <li>
