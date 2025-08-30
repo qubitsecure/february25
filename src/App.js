@@ -13,6 +13,17 @@ import Footer from './Footer';
 import './index.css';
 import P5Sketch from './components/P5Sketch.js';
 
+async function contactAction({ request }) {
+  const formData = await request.formData();
+  const email = formData.get('email');
+  const message = formData.get('message');
+  await fetch('/api/contact', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ email, message }),
+  });
+  return null;
+}
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -24,7 +35,7 @@ const router = createBrowserRouter(
       <Route path="/Gallery" element={<Gallery />} />
       <Route path="/Exhibitions" element={<Exhibitions />} />
       <Route path="/AboutMe" element={<AboutMe />} />
-      <Route path="/Contact" element={<Contact />} />
+      <Route path="/Contact" element={<Contact />} action={contactAction} />
       <Route path="/Information" element={<Information />} />
       <Route path="/footer" element={<Footer />} />
 
