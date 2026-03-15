@@ -36,7 +36,7 @@ return (
           <div className='mainpicture_img'>
               <img src={op1} alt='op1' />
           </div>
-          <div className='caption-r'>Linsay Lohan</div>
+          <div className='caption-r'>Young Harry Reijnaerdts</div>
           <div className='secondary_img'>
               <img src={op2} alt='op2' />
           </div>

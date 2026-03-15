@@ -1,6 +1,6 @@
 
-import P5Sketch from "../components/P5Sketch";
-import useP5 from "../hooks/useP5";
+import P5Sketch from "./components/P5Sketch";
+import useP5 from "./hooks/useP5";
 import React from "react";
 import { useEffect } from "react";
 import { useRef } from "react";
